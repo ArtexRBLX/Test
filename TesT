@@ -1,0 +1,308 @@
+-- Gui to Lua
+
+-- Version: 3.2
+
+
+
+-- Instances:
+
+
+
+local ScreenGui = Instance.new("ScreenGui")
+
+local Frame = Instance.new("Frame")
+
+local UICorner = Instance.new("UICorner")
+
+local to = Instance.new("Frame")
+
+local UICorner_2 = Instance.new("UICorner")
+
+local TextButton = Instance.new("TextButton")
+
+local credsbutton = Instance.new("TextButton")
+
+local script = Instance.new("Frame")
+
+local UICorner_3 = Instance.new("UICorner")
+
+local credits = Instance.new("Frame")
+
+local UICorner_4 = Instance.new("UICorner")
+
+local TextLabel = Instance.new("TextLabel")
+
+local TextLabel_2 = Instance.new("TextLabel")
+
+local ImageButton = Instance.new("ImageButton")
+
+
+
+--Properties:
+
+
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+
+
+Frame.Parent = ScreenGui
+
+Frame.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+
+Frame.BackgroundTransparency = 0.300
+
+Frame.Position = UDim2.new(0.353045523, 0, 0.229781836, 0)
+
+Frame.Size = UDim2.new(0, 383, 0, 252)
+
+Frame.ZIndex = 24
+
+
+
+UICorner.Parent = Frame
+
+
+
+to.Name = "to"
+
+to.Parent = Frame
+
+to.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+
+to.BackgroundTransparency = 0.300
+
+to.Position = UDim2.new(-0.323759794, 0, 0.0119047621, 0)
+
+to.Size = UDim2.new(0, 100, 0, 243)
+
+
+
+UICorner_2.Parent = to
+
+
+
+TextButton.Parent = to
+
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+TextButton.BackgroundTransparency = 1.000
+
+TextButton.Position = UDim2.new(0.00999999978, 0, 0, 0)
+
+TextButton.Size = UDim2.new(0, 99, 0, 120)
+
+TextButton.Font = Enum.Font.SourceSans
+
+TextButton.Text = "📄 scripts"
+
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+TextButton.TextSize = 25.000
+
+TextButton.TextWrapped = true
+
+
+
+credsbutton.Name = "creds button"
+
+credsbutton.Parent = to
+
+credsbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+credsbutton.BackgroundTransparency = 1.000
+
+credsbutton.Position = UDim2.new(0.00146213174, 0, 0.491916507, 0)
+
+credsbutton.Size = UDim2.new(0, 96, 0, 117)
+
+credsbutton.Font = Enum.Font.SourceSans
+
+credsbutton.Text = "🔥 Credits"
+
+credsbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+credsbutton.TextSize = 25.000
+
+
+
+script.Name = "script"
+
+script.Parent = Frame
+
+script.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+script.BackgroundTransparency = 1.000
+
+script.Size = UDim2.new(0, 383, 0, 252)
+
+
+
+UICorner_3.Parent = script
+
+
+
+credits.Name = "credits"
+
+credits.Parent = Frame
+
+credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+credits.BackgroundTransparency = 1.000
+
+credits.Size = UDim2.new(0, 383, 0, 252)
+
+credits.Visible = false
+
+
+
+UICorner_4.Parent = credits
+
+
+
+TextLabel.Parent = credits
+
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+TextLabel.BackgroundTransparency = 1.000
+
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+
+TextLabel.Font = Enum.Font.SourceSans
+
+TextLabel.Text = "Ui Made by physin#1700 | Owner : Krixx#7568"
+
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+TextLabel.TextSize = 13.000
+
+
+
+TextLabel_2.Parent = Frame
+
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+TextLabel_2.BackgroundTransparency = 1.000
+
+TextLabel_2.Position = UDim2.new(-0.151435971, 0, 0.801587284, 0)
+
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+
+TextLabel_2.Font = Enum.Font.SourceSans
+
+TextLabel_2.Text = "KrixxHub"
+
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+TextLabel_2.TextSize = 20.000
+
+
+
+ImageButton.Parent = ScreenGui
+
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+ImageButton.Position = UDim2.new(0.113542281, 0, 0.231065467, 0)
+
+ImageButton.Size = UDim2.new(0, 100, 0, 100)
+
+ImageButton.Image = "http://www.roblox.com/asset/?id=1025976476"
+
+
+
+-- Scripts:
+
+
+
+local function XIZSXK_fake_script() -- TextButton.LocalScript 
+
+	local script = Instance.new('LocalScript', TextButton)
+
+
+	script.Parent.MouseButton1Click:Connect(function()
+
+		script.Parent.Parent.Parent.credits.Visible = false
+
+		script.Parent.Parent.Parent.script.Visible = true
+
+	end)
+
+	
+
+	
+
+end
+
+coroutine.wrap(XIZSXK_fake_script)()
+
+local function KJZCEI_fake_script() -- credsbutton.LocalScript 
+
+	local script = Instance.new('LocalScript', credsbutton)
+
+
+
+	script.Parent.MouseButton1Click:Connect(function()
+
+		script.Parent.Parent.Parent.credits.Visible = true
+
+		script.Parent.Parent.Parent.script.Visible = false
+
+	end)
+
+	
+
+	
+
+end
+
+coroutine.wrap(KJZCEI_fake_script)()
+
+local function KNVJAW_fake_script() -- ScreenGui.LocalScript 
+
+	local script = Instance.new('LocalScript', ScreenGui)
+
+
+
+	Frame = script.Parent.Frame
+
+	Frame.Draggable = true
+
+	Frame.Active = true
+
+	Frame.Selectable = true
+
+	
+
+end
+
+coroutine.wrap(KNVJAW_fake_script)()
+
+local function UOUP_fake_script() -- ImageButton.LocalScript 
+
+	local script = Instance.new('LocalScript', ImageButton)
+
+
+
+	local button = script.Parent
+
+	
+
+	button.MouseButton1Click:Connect(function()
+
+		if button.Parent.Frame.Visible == false then
+
+			button.Parent.Frame.Visible = true
+
+		else
+
+			button.Parent.Frame.Visible = false
+
+		end
+
+	end)
+
+end
+
+coroutine.wrap(UOUP_fake_script)()
